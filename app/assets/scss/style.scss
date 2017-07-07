@@ -1,0 +1,53 @@
+// Cores
+
+// $primeira: ;
+// $segunda: ;
+// $terceira: ;
+// $quarta: ;
+// $quinta: ;
+
+// Viewports
+
+$phone-sm: 568px;
+$tablet-sm: 768px;
+$tablet-lg: 1024px;
+$desktop-sm: 1280px;
+$desktop-md: 1600px;
+$desktop-lg: 1920px;
+
+// Media Queries
+
+@mixin tablet-lg {
+  @media (min-width: #{$tablet-sm}) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin desktop-sm {
+  @media (min-width: #{$desktop-sm}) {
+    @content;
+  }
+}
+
+@mixin desktop-md {
+  @media (min-width: #{$desktop-md}) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: #{$desktop-lg}) {
+    @content;
+  }
+}
+
+// Reset
+
+@media (orientation: portrait){
+	body > * {
+		display: none;
+	}
+}
+
+@import "modules/aside";
+@import "modules/board";

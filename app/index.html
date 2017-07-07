@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt_BR" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Pedalboard Simulator :: HRS</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body>
+
+	<aside ng-controller="AppController">
+		Aside aqui
+	</aside>
+	
+	<section id="board" ui-view></section>
+
+	<script src="/assets/lib/angular/angular.min.js"></script>
+	<script src="/assets/lib/angular-ui-router/angular-ui-router.min.js"></script>
+	<script src="/assets/lib/jquery/jquery.min.js"></script>
+	<script src="/assets/lib/jquery-ui/jquery-ui.min.js"></script>
+
+	<script src="/assets/js/app.js"></script>
+	<script src="/assets/js/controllers/AppController.js"></script>
+</body>
+</html>
